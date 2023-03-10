@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "eastman"
+version = "0.1.0"
+description = ""
+authors = ["Najib Ishaq <najib.ishaq@nih.gov>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+polars = { version = "^0.16.11", extras = ["pandas", "numpy", "pyarrow"] }
+vaex = "^4.16.0"
+pandas = "^1.5.3"
+numpy = "^1.23.5"
+llvmlite = "0.39.1"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.1.1"
+flake8 = "^6.0.0"
+black = "^23.1.0"
+mypy = "^1.1.1"
+flake8-docstrings = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
